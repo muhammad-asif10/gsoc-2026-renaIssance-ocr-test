@@ -1,0 +1,429 @@
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ============================================================================
+# 2. JUPYTER NOTEBOOKS & IPYTHON
+# ============================================================================
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+.ipython/
+
+# Remove notebook output (optional - uncomment if needed)
+# .ipynb
+
+# Temporary notebook files
+*~
+.~*
+.*.swp
+.*.swo
+
+# ============================================================================
+# 3. IDE & EDITOR CONFIGURATIONS
+# ============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+.vim/
+*.vim
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Nano
+.nano/
+
+# Atom
+.atom/
+
+# ============================================================================
+# 4. LARGE DATA FILES
+# ============================================================================
+
+# Dataset directories (too large for version control)
+data/raw/*.pdf
+data/raw/*.PNG
+data/raw/*.png
+data/raw/*.jpg
+data/raw/*.jpeg
+data/raw/images/
+data/processed/
+data/segmented/
+
+# Image files (keep transcriptions, exclude images)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+
+# PDF files
+*.pdf
+
+# ============================================================================
+# 5. MODEL CHECKPOINTS & WEIGHTS
+# ============================================================================
+
+# PyTorch model files
+*.pth
+*.pt
+*.bin
+*.pickle
+*.pkl
+models/*.pth
+models/*.pt
+checkpoints/
+weights/
+
+# ONNX models
+*.onnx
+quantized_model/
+
+# TensorFlow
+*.pb
+*.h5
+*.keras
+saved_model/
+
+# Hugging Face cache
+.cache/
+huggingface/
+
+# ============================================================================
+# 6. RESULTS & OUTPUTS
+# ============================================================================
+
+# Experiment results
+results/
+outputs/
+logs/
+runs/
+
+# Visualization outputs
+*.png (already covered above)
+plots/
+figures/
+graphs/
+
+# CSV/JSON outputs
+results.csv
+metrics.json
+predictions.json
+logs.json
+
+# ============================================================================
+# 7. OPERATING SYSTEM FILES
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Windows
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN/
+*.lnk
+.TemporaryItems
+
+# Linux
+.directory
+*~
+
+# ============================================================================
+# 8. CONFIGURATION & SECRETS
+# ============================================================================
+
+# API Keys & Secrets (NEVER commit these!)
+.env
+.env.local
+.env.*.local
+secrets.json
+apikeys.txt
+config_private.yaml
+credentials.json
+*.key
+*.pem
+*.p12
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+database.db
+
+# ============================================================================
+# 9. DEPENDENCIES & REQUIREMENTS
+# ============================================================================
+
+# Don't commit lock files (except requirements.txt)
+Pipfile.lock
+poetry.lock
+yarn.lock
+package-lock.json
+
+# Node modules (if using Node)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ============================================================================
+# 10. BUILD & DISTRIBUTION
+# ============================================================================
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================================================================
+# 11. TESTING & COVERAGE
+# ============================================================================
+
+# pytest
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+.nox/
+
+# Coverage reports
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ============================================================================
+# 12. DOCKER
+# ============================================================================
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# ============================================================================
+# 13. GIT
+# ============================================================================
+
+# Git patches
+*.patch
+*.diff
+
+# ============================================================================
+# 14. PROJECT-SPECIFIC
+# ============================================================================
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Log files
+*.log
+logs/
+debug.log
+
+# Task runner outputs
+.task-cache/
+
+# Miscellaneous
+.DS_Store
+*.swp
+*.swo
+*~
+.#*
+*.orig
+
+# Data/Model directories (customize as needed)
+# Uncomment the ones specific to your project:
+
+# Document files
+data/raw/
+data/processed/
+# Keep transcriptions, ignore large files
+!/data/raw/transcriptions/
+!/data/raw/*.txt
+
+# Model weights (too large)
+models/
+weights/
+
+# Large outputs
+results/
+outputs/
+
+# ============================================================================
+# 15. OPTIONAL: IGNORE SPECIFIC PATTERNS
+# ============================================================================
+
+# Ignore all .ppt files
+# *.ppt
+# *.pptx
+
+# Ignore all Excel files
+# *.xls
+# *.xlsx
+
+# Ignore all text files in data folder (but keep .txt in main folder)
+# data/**/*.txt
+
+# ============================================================================
+# 16. WHITELIST: EXCEPTION RULES (Force-add these)
+# ============================================================================
+
+# Exception: DO commit these important files
+!.gitkeep
+!.gitignore
+!README.md
+!requirements.txt
+!setup.py
+!LICENSE
+!config.yaml.example
+!src/**/*.py
+!notebooks/**/*.ipynb
+!data/raw/transcriptions/
