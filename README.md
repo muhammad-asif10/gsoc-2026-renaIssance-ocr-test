@@ -1,3 +1,5 @@
+[HumanAI](img\humanai.jpg)
+
 # Historical Document OCR: CNN-RNN with LLM Integration
 
 **GSOC 2026 Test Submission | HumanAI Foundation | RenAIssance Project**
