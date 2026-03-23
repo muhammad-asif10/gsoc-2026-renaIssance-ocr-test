@@ -385,38 +385,18 @@ debug.log
 # Document files
 data/raw/
 data/processed/
-# Keep transcriptions, ignore large files
+
 !/data/raw/transcriptions/
 !/data/raw/*.txt
 
-# Model weights (too large)
+
 models/
 weights/
 
-# Large outputs
+
 results/
 outputs/
 
-# ============================================================================
-# 15. OPTIONAL: IGNORE SPECIFIC PATTERNS
-# ============================================================================
-
-# Ignore all .ppt files
-# *.ppt
-# *.pptx
-
-# Ignore all Excel files
-# *.xls
-# *.xlsx
-
-# Ignore all text files in data folder (but keep .txt in main folder)
-# data/**/*.txt
-
-# ============================================================================
-# 16. WHITELIST: EXCEPTION RULES (Force-add these)
-# ============================================================================
-
-# Exception: DO commit these important files
 !.gitkeep
 !.gitignore
 !README.md
