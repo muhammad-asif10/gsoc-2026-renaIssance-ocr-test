@@ -17,8 +17,7 @@ Renaissance-era printed documents, specifically targeting 17th-century Spanish t
 
 **Project Includes:**
 
-- ✓ 4 Jupyter Notebooks (EDA, Preprocessing, Training, Evaluation)
 - ✓ CNN-RNN Model Implementation
 - ✓ LLM Integration Module
 - ✓ Complete Evaluation Framework
-- ✓ Professional Documentation
+- Datasets
