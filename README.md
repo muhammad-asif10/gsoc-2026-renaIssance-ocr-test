@@ -1,4 +1,4 @@
-[HumanAI](img\humanai.jpg)
+![HumanAI](img\humanai.jpg)
 
 # Historical Document OCR: CNN-RNN with LLM Integration
 
