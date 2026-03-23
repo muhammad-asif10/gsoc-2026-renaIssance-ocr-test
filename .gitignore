@@ -53,3 +53,9 @@ credentials.json
 !README.md
 !requirements.txt
 !.gitkeep
+
+*.log
+*.logs
+logs/
+log/
+*.log.*

@@ -1,0 +1,10 @@
+segmentation:
+  min_line_height: 13
+  gap_threshold: 0.015
+  padding: 3
+  output_height: 64
+  max_width: 1024
+  deskew: true
+  remove_noise: true
+  auto_tune: true
+  debug: false
