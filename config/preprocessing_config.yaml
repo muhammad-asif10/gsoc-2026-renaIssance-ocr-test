@@ -1,0 +1,42 @@
+# config/preprocessing_config.yaml
+
+# PDF CONVERSION
+pdf_conversion:
+  dpi_factor: 2.0
+  output_format: png
+  quality: 95
+
+# ============ PREPROCESSING ============
+preprocessing:
+  denoise:
+    method: bilateral
+    bilateral_d: 9
+    bilateral_sigma_color: 75
+    bilateral_sigma_space: 75
+  
+  lighting_correction:
+    enabled: true
+    kernel_size: 101
+  
+  contrast:
+    method: clahe
+    clip_limit: 3.0
+    tile_size: 8
+  
+  binarization:
+    enabled: false
+    method: otsu
+
+# ============ LINE SEGMENTATION ============
+segmentation:
+  min_line_height: 15
+  gap_threshold: 0.02
+  padding: 2
+  output_height: 64
+  max_width: 1024
+
+# ============ OUTPUT ============
+output:
+  save_quality: 0
+  save_intermediate: true
+  generate_preview: true
