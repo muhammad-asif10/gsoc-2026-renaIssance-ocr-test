@@ -1,3 +1,5 @@
+![HumanAI](img/humanai.png)
+
 # Historical Document OCR: CNN-RNN with LLM Integration
 
 **GSOC 2026 Test Submission | HumanAI Foundation | RenAIssance Project**
@@ -15,8 +17,7 @@ Renaissance-era printed documents, specifically targeting 17th-century Spanish t
 
 **Project Includes:**
 
-- ✓ 4 Jupyter Notebooks (EDA, Preprocessing, Training, Evaluation)
 - ✓ CNN-RNN Model Implementation
 - ✓ LLM Integration Module
 - ✓ Complete Evaluation Framework
-- ✓ Professional Documentation
+- Datasets
