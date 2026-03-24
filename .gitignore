@@ -3,6 +3,7 @@ venv/
 env/
 .venv
 
+
 # Python
 __pycache__/
 *.py[cod]
@@ -25,6 +26,8 @@ data/raw/*.pdf
 data/processed/
 data/cropped/
 data/segmented/
+data
+notebooks/cropped_output/*.png
 
 # Model Checkpoints & Weights
 models/
