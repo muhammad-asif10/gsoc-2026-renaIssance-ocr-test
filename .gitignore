@@ -28,6 +28,8 @@ data/cropped/
 data/segmented/
 data
 notebooks/cropped_output/*.png
+tests
+notebooks/batch_ocr_output
 
 # Model Checkpoints & Weights
 models/
