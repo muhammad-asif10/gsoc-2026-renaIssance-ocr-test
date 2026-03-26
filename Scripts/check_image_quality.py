@@ -1,5 +1,3 @@
-# scripts/check_image_quality.py
-
 import cv2
 import numpy as np
 from pathlib import Path
@@ -51,4 +49,4 @@ def check_image(image_path):
 
 # Test on your problematic image
 if __name__ == "__main__":
-    check_image("path/to/your/image.png")
+    check_image("C:\Open Source\GSOC\org\HumanAI\gsoc-2026-renaissance-ocr-test\GSOC_2026_HumanAI_Test\data\Buendia_Instruccion\lines\page_023\lines\page_023_line_0043.png")
