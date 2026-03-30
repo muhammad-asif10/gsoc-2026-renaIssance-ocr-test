@@ -8,7 +8,7 @@ This repository contains a complete implementation of a hybrid CNN-RNN architect
 with LLM post-processing for Optical Character Recognition (OCR) of historical 
 Renaissance-era printed documents, specifically targeting 17th-century Spanish texts.
 
-![OCR_result](img\ocr_result.png)
+![OCR_result](img/ocr_result.png)
 
 ## Material
 
@@ -16,7 +16,7 @@ Renaissance-era printed documents, specifically targeting 17th-century Spanish t
 
 - [Source of data](https://bama365-my.sharepoint.com/personal/xgranja_ua_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fxgranja%5Fua%5Fedu%2FDocuments%2FUA%2F1%2E%20Research%2FAI%2FHumanAI%2FGSoC%2026%2F0%2E%20Test%2FTest%20sources&viewid=aeb9535d%2D9751%2D4642%2D912a%2Dc16ad99be40c)
 
-![Dataset](img\dataset.png)
+![Dataset](img/dataset.png)
 
 ### Characters in Spanish Language
 > BASIC ALPHABET:
@@ -108,6 +108,6 @@ A Machine Learning model is trained on old books page so it able to detect text 
 - A docker container
 
 ### Gallery
-![OCR_anaysis](img\ocr_analysis.png)
+![OCR_anaysis](img/ocr_analysis.png)
 
 
