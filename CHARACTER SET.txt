@@ -1,0 +1,49 @@
+SPANISH COMPLETE CHARACTER SET
+===============================
+
+BASIC ALPHABET:
+a b c d e f g h i j k l m n ñ o p q r s t u v w x y z
+A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z
+
+ACCENTED VOWELS (Most Common):
+á é í ó ú
+Á É Í Ó Ú
+
+N WITH TILDE (Most Important):
+ñ Ñ
+
+U WITH DIAERESIS (Common):
+ü Ü
+
+GRAVE ACCENTS (Rare):
+à è ì ò ù ſ
+À È Ì Ò Ù
+
+SPANISH PUNCTUATION:
+¿ (opening question)
+? (closing question)
+¡ (opening exclamation)
+! (closing exclamation)
+
+ORDINALS:
+ª (feminine)
+º (masculine)
+°(degree)
+
+NUMBERS:
+0 1 2 3 4 5 6 7 8 9
+
+COMMON SYMBOLS:
+. , ; : - " ' ( ) [ ] { } @ # $ € + - × ÷ = % & / \ ~
+
+QUICK COPY BLOCKS:
+═════════════════
+
+All lowercase: a á b c d e é f g h i í j k l m n ñ o ó p q̀  r s ſ t u ú ü v w x y z
+
+All uppercase: A Á B C D E É F G H I Í J K L M N Ñ O Ó P Q R S T U Ú Ü V W X Y Z
+
+All accented: á é í ó ú ü à è ì ò ù Á É Í Ó Ú Ü À È Ì Ò Ù
+
+Most used: ñ á é í ó ú ü ¿ ¡
+"""
