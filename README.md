@@ -8,6 +8,8 @@ This repository contains a complete implementation of a hybrid CNN-RNN architect
 with LLM post-processing for Optical Character Recognition (OCR) of historical 
 Renaissance-era printed documents, specifically targeting 17th-century Spanish texts.
 
+![line_detection](img\output3.gif)
+
 ![OCR_result](img/ocr_result.png)
 
 ## Material
