@@ -10,8 +10,6 @@ Renaissance-era printed documents, specifically targeting 17th-century Spanish t
 
 ![OCR_result](img\ocr_result.png)
 
-![line_detection](img\output3.gif)
-
 ## Material
 
 - [Test detail](https://humanai.foundation/assets/GSoC%202026%20tests.pdf)
