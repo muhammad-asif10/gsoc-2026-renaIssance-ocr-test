@@ -86,6 +86,7 @@ For additional character references, see `CHARACTER SET.txt`.
 
 ![Pipeline preview](./img/output3.gif)
 ![OCR result](./img/ocr_result.png)
+![Projection_different_gap_test](experiments/notebook/diagnostics_Book1_page_0002_col_0.png)
 
 ## Acknowledgment
 
