@@ -2,6 +2,11 @@
 
 This repository contains a notebook-first OCR workflow for Renaissance-era and early modern Spanish printed books. The project covers end-to-end processing: converting source PDFs to images, preprocessing noisy scans, segmenting text lines, training OCR models, and producing final transcriptions.
 ![Approach](img/approach.jpeg)
+
+### LLM Test(Gemini 3)
+
+![LLM_result](img/llm_result.gif)
+
 ## Project Scope
 
 The pipeline is designed for challenging historical pages where modern OCR systems often fail due to:
