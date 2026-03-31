@@ -15,7 +15,7 @@ The workflow combines classical image processing, deep learning OCR, and optiona
 
 ## Dataset
 1. Book1
-    - ![Pages](https://drive.google.com/drive/folders/1EnlJBAcCV2-vDwQq1G1nio1lTGvOjgQz?usp=drive_link)
+    - [Pages](https://drive.google.com/drive/folders/1EnlJBAcCV2-vDwQq1G1nio1lTGvOjgQz?usp=drive_link)
     - ![Transcription](https://docs.google.com/spreadsheets/d/1cWy2J-GFhK7SF1KE4ZHWmSl6fRJ7i9ub/edit?usp=drive_link&ouid=106716551578912679442&rtpof=true&sd=true)
     - ![Split](https://drive.google.com/drive/folders/1QluBLTwX0y5QmJQEjBrZMu6VwSwByTW1?usp=drive_link) - Data splitted in `train`, `test` and `val` for model training.
 
