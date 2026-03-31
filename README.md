@@ -1,7 +1,7 @@
 ![HumanAI](img/humanai.png)
 
 # Historical Document OCR: CNN-RNN with LLM Integration
-
+![Approach](img/approach.jpeg)
 **GSOC 2026 Test | HumanAI Foundation | RenAIssance Project**
 
 This repository contains a complete implementation of a hybrid CNN-RNN architecture 
