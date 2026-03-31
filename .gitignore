@@ -32,7 +32,6 @@ tests
 notebooks/batch_ocr_output
 
 # Model Checkpoints & Weights
-models/
 weights/
 checkpoints/
 *.pth
@@ -58,6 +57,7 @@ credentials.json
 !README.md
 !requirements.txt
 !.gitkeep
+!data\README.md
 
 *.log
 *.logs
