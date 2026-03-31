@@ -1,115 +1,90 @@
-![HumanAI](img/humanai.png)
+# RenAIssance OCR Pipeline for Historical Spanish Documents
 
-# Historical Document OCR: CNN-RNN with LLM Integration
+This repository contains a notebook-first OCR workflow for Renaissance-era and early modern Spanish printed books. The project covers end-to-end processing: converting source PDFs to images, preprocessing noisy scans, segmenting text lines, training OCR models, and producing final transcriptions.
 
-**GSOC 2026 Test | HumanAI Foundation | RenAIssance Project**
+## Project Scope
 
-This repository contains a complete implementation of a hybrid CNN-RNN architecture 
-with LLM post-processing for Optical Character Recognition (OCR) of historical 
-Renaissance-era printed documents, specifically targeting 17th-century Spanish texts.
+The pipeline is designed for challenging historical pages where modern OCR systems often fail due to:
 
-![line_detection](./img/output3.gif)
+- faded ink and low-contrast scans,
+- long-s glyphs (`ſ`),
+- diacritics and legacy punctuation,
+- column-based page layouts.
 
-![OCR_result](img/ocr_result.png)
+The workflow combines classical image processing, deep learning OCR, and optional LLM-assisted post-correction for higher transcription quality.
 
-## Material
+## Notebook Workflow
 
-- [Test detail](https://humanai.foundation/assets/GSoC%202026%20tests.pdf)
+The core work is organized in the `notebooks/` directory and intended to be executed in sequence:
 
-- [Source of data](https://bama365-my.sharepoint.com/personal/xgranja_ua_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fxgranja%5Fua%5Fedu%2FDocuments%2FUA%2F1%2E%20Research%2FAI%2FHumanAI%2FGSoC%2026%2F0%2E%20Test%2FTest%20sources&viewid=aeb9535d%2D9751%2D4642%2D912a%2Dc16ad99be40c)
+1. **`pdf_to_images.ipynb`**  
+   Builds the image dataset from source PDFs and applies page-level cropping for multi-column layouts.
 
-![Dataset](img/dataset.png)
+2. **`preprocessing.ipynb`**  
+   Applies preprocessing steps to improve readability before segmentation and OCR.
 
-### Characters in Spanish Language
-> BASIC ALPHABET:
+3. **`segmentation.ipynb`**  
+   Detects and crops individual text lines from page images, including folder-level processing utilities.
 
-    a b c d e f g h i j k l m n ñ o p q r s t u v w x y z
+4. **`training.ipynb`**  
+   Trains the OCR model used for historical text recognition.
 
-    A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z
+5. **`transcription.ipynb`**  
+   Runs inference/transcription (CPU and GPU paths are included) and supports final text extraction workflows.
 
->ACCENTED VOWELS (Most Common):
+## Repository Layout
 
-    á é í ó ú
-    Á É Í Ó Ú
+```text
+notebooks/            End-to-end OCR pipeline notebooks
+Scripts/              Script versions of preprocessing and OCR utilities
+config/               YAML configuration files
+apps/                 Demo app entry points
+tests/                Sample assets and outputs for validation
+img/                  Visual assets used in documentation
+```
 
-> N WITH TILDE (Most Important):
+## Environment Setup
 
-    ñ Ñ
+### 1) Create and activate a virtual environment
 
-> U WITH DIAERESIS (Common):
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
 
-    ü Ü
+### 2) Install dependencies
 
-> GRAVE ACCENTS (Rare):
+```bash
+pip install -r requirements.txt
+```
 
-    à è ì ò ù ſ
-    À È Ì Ò Ù
+### 3) Launch Jupyter
 
-> SPANISH PUNCTUATION:
+```bash
+jupyter lab
+```
 
-    ¿ (opening question)
-    ? (closing question)
-    ¡ (opening exclamation)
-    ! (closing exclamation)
+Then open notebooks in `notebooks/` and run them in the workflow order above.
 
-> ORDINALS:
+## Data and Character Coverage
 
-    ª (feminine)
-    º (masculine)
-    ° (degree)
+The OCR target domain is historical Spanish printed text, including:
 
-> NUMBERS:
+- `ñ`, accented vowels (`á é í ó ú`), and diaeresis (`ü`),
+- long-s (`ſ`) and legacy punctuation,
+- common symbols and numeric tokens seen in book scans.
 
-    0 1 2 3 4 5 6 7 8 9
+For additional character references, see `CHARACTER SET.txt`.
 
-> COMMON SYMBOLS:
+## Visual Examples
 
-    . , ; : - " ' ( ) [ ] { } @ # $ € + - × ÷ = % & / \ ~
+![Pipeline preview](./img/output3.gif)
+![OCR result](./img/ocr_result.png)
 
-# Dataset
-This model is trained on 6 book
-- **Buendia_Instruccion**
-- **Covarrubias_Tesoro_lengua**
-- **Guardiola_Tratado_nobleza**
-- **PORCONES_23_5_1628**
-- **PORCONES_228_38_1646**
-- **PORCONES_748_6_1650**
+## Acknowledgment
 
-> These books are in printed text.
+Developed as part of the **GSoC 2026 test context** under the HumanAI Foundation RenAIssance effort.
 
-> These books are in Spanish Language.
+## License
 
-
-# Abstract
-Most OCR tools like Adobe and CamScanner fail to detect text from old book that contain faded ink and low quailty pages.
-
-# Solution
-A Machine Learning model is trained on old books page so it able to detect text even in old books pages very accuartly.
-
-# Methods
-- ✓ CNN-RNN
-- ✓ Wighted CNN-RNN
-- ✓ Transformers
-- ✓ LLM Integration (*) - Most Important
-     > I achieved 98-100% accuaracy in Test during Transcrption using Gemini Model.
-
-
-# Most Important Problems
-- Previous model consider Spanish word long s 'ſ' as **s**.
-- Consider **ñ** as simple **n**.
-- Consider **á** as **a**
-- O -> 0
-- Also **ſ** consider **f** by most OCR models.
-
-    > ⚠️ I spend a lot of time fix these character manually or using LLM to prepare a good dataset.
-
-# Further Work after making model.
-
-- A mobile app like CamScanner
-- A Web interface
-- A docker container
-
-### Gallery
-![OCR_anaysis](img/ocr_analysis.png)
-
-
+This project is distributed under the terms defined in `LICENCE`.
