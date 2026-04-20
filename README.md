@@ -1,3 +1,5 @@
+**⚠️ Due to Mid-term exam, I am unavailable to give my time to this project. But I available soon and start working again on this.**
+
 # RenAIssance OCR Pipeline for Historical Spanish Documents
 
 This repository contains a notebook-first OCR workflow for Renaissance-era and early modern Spanish printed books. The project covers end-to-end processing: converting source PDFs to images, preprocessing noisy scans, segmenting text lines, training OCR models, and producing final transcriptions.
